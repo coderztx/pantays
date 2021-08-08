@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盘他影视-联系我们</title>
+    <link rel="stylesheet" href="./static/css/contact_us.css">
+    <link rel="shortcut icon" href="./static/pic/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/font/iconfont.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us
+            <span id="change_style">
+                <i class="iconfont icon-qiehuan"></i>
+            </span>
+        </h2>
+        
+        <form action="/contact_us/send" target="_blank" method="POST">
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input id="input1" type="text" name="fn" autocomplete="off">
+                        <span id="text1" class="text">First Name</span>
+                        <span id="line1" class="line"></span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="inputBox">
+                        <input id="input2" type="text" name="ln" autocomplete="off">
+                        <span id="text2" class="text">Last Name</span>
+                        <span id="line2" class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input id="input3" type="text" name="em" autocomplete="off">
+                        <span id="text3" class="text">Email</span>
+                        <span id="line3" class="line"></span>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="inputBox">
+                        <input id="input4" type="text" name="mb" autocomplete="off">
+                        <span id="text4" class="text">Mobile</span>
+                        <span id="line4" class="line"></span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox textarea">
+                        <textarea  id="input5" name="msg"></textarea>
+                        <span id="text5" class="text">Type your meessage Here...</span>
+                        <span id="line5" class="line"></span>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div> 
+        </form>
+    </div>
+    <script src="./static/js/jQuery_min.js"></script>
+    <script src="./static/js/contact_us.js"></script>
+</body>
+</html>

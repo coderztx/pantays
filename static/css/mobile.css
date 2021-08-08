@@ -1,0 +1,57 @@
+
+
+.container .main .funcArea{
+    width: 330px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+} 
+
+.container .main .funcArea .logo{
+    width: 60px;
+    padding-top: 60px;
+    position: absolute;
+    top: 20px;
+ 
+
+}
+
+.container .main .funcArea .formArea{
+    position: absolute;
+    top:47px;
+    left: 3px;
+}
+
+.container .main .funcArea .formArea .input{
+    width: 250px;
+    position: relative;
+    bottom: 49px;
+    left: 51px;
+    
+}
+
+.container .main .funcArea .formArea .searchButton{
+    width: 45px;
+    position: absolute;
+    bottom: 49px;
+    right: -51px;
+}
+
+.container .main .funcArea .srcChoose{
+    top: 14px;
+    left: 80px;
+   
+}
+
+.container .main .funcArea .srcChoose div{
+    width: 40px;
+    
+}
+
+#changeBtn{
+    display: none;
+}
+
+.container .footer .inf .copy{
+    float: left;
+}

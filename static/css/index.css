@@ -1,0 +1,190 @@
+@import "./reset.css";
+@import "../font/iconfont.css";
+
+/* 公共样式开始 */
+
+/* 左浮动 */
+.left{
+    float: left;
+}
+
+/* 清除浮动功能 */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 按钮 */
+.btn{
+    background: #ccc;
+    width: 45px;
+    padding: 5px 8px 15px 8px;
+    border-right: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.visible{
+    visibility: visible;
+}
+
+.disvisible{
+    visibility: hidden;
+}
+
+.appear{
+    display: block;
+}
+
+.disappear{
+    display: none;
+}
+
+
+/* 公共样式结束 */
+
+/* 整体部分 */
+.container{
+    background: url(../pic/back.jpg) no-repeat left top/100% 103%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+}
+
+/* 遮罩层样式 */
+.container .mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+/* 头部部分 */
+
+.container .header{
+    width: 100%;
+    font-size: 14px;
+    height: 50px;
+}
+
+/* 主体部分 */
+.container .main{
+    width: 100%;
+    margin-top: 55px;
+}
+
+.container .main .funcArea{
+    width: 700px;
+    margin-left: 100px;
+    position: relative;
+}
+
+/* logo部分 */
+.container .main .funcArea .logo{
+    width: 100px;
+    height: 0;
+    padding-top: 100px;
+    overflow: hidden;
+    background: url(../pic/logo.png) no-repeat left top/100% 100%;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.container .main .funcArea .logo:hover{
+    border: 1px solid #ccc;
+}
+
+/* form表单区域 */
+.container .main .funcArea .formArea{
+    margin-top: 40px;
+    margin-left: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.container .main .funcArea .formArea .input{
+    background: #fff;
+    height: 37px;
+    width: 450px;
+    padding: 0 9px;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+}
+
+.container .main .funcArea .formArea .searchButton{
+    border: 1px solid #000;
+    height: 37px;
+    width: 100px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    background: #000;
+    color: #fff;
+
+}
+
+.container .main .funcArea .formArea .searchButton:hover{
+    border: 2px solid #fff;
+}
+
+/* 资源选择区域 */
+.container .main .funcArea .srcChoose{
+    position: absolute;
+    top: 15px;
+    left: 128px;
+    color: #000;
+    text-align: left;
+    font-size: 13px;
+}
+.container .main .funcArea .srcChoose div:hover{
+    background: #000;
+    color: #fff;
+}
+.container .main .funcArea .srcChoose .selected{
+    background: #000;
+    color: #fff;
+    position: relative;
+    bottom: 3px;
+}
+
+/* 尾部部分  */
+.container .footer{
+    height: 30px;
+    width: 100%;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.container .footer .inf li{
+    float: right;
+    margin-right: 40px;
+
+}
+
+.container .footer .inf li:first-child{
+    margin-right: 3px;
+}
+
+.container .footer .inf li:nth-child(2){
+    margin-right: 10px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.container .footer .inf li a{
+    display: block;
+}
+
+.container .footer .inf li:hover{
+    color: #9a9a9a;
+}

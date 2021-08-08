@@ -1,0 +1,222 @@
+/* 公共样式开始 */
+.appear{
+    display: block;
+}
+
+.disappear{
+    display: none;
+}
+
+/* 公共样式结束 */
+
+/* 可更换的背景样式开始 */
+#backPic{
+    background: url(../pic/back.jpg) no-repeat left top/100% 103%;
+}
+
+#backPic1{
+    background: url(../pic/back1.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic2{
+    background: url(../pic/back2.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic3{
+    background: url(../pic/back3.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic4{
+    background: url(../pic/back4.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic5{
+    background: url(../pic/back5.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic6{
+    background: url(../pic/back6.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic7{
+    background: url(../pic/back7.jpg) no-repeat left top/100% 100%;
+}
+
+#backPic8{
+    background: url(../pic/back8.jpg) no-repeat left top/100% 100%;
+}
+
+.container .main .funcArea .formArea .searchButton{
+    top: 0;
+}
+
+/* 可更换的背景样式结束 */
+.container .header .weatherItem iframe{
+    padding: 0 10px;
+    height: 60px;
+    width: 225px;
+    position: relative;
+}
+
+.container .header .players{
+    text-align: center;
+    margin-left: 40px;
+}
+
+.container .header .players li{
+    width: 85px;
+    float: left;
+    margin-left: 5px;
+    padding: 15px 9px;
+    
+}
+
+.container .header .players li:hover{
+    color: #ddd;
+}
+
+.container .header .players li i{
+    margin-right: 5px;
+}
+
+.container .header .players li img{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: -3px;
+
+}
+
+/* 更换皮肤模块样式开始 */
+
+.container .header .changeSkins{
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    
+}
+
+.container .header .changeSkins .skinsBtn{
+    background: rgba(57, 88, 69, 0.4);
+    color: #fff;
+    transition: 0.4s;
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.container .header .changeSkins .skinsBtn:hover{
+    background: rgba(12, 80, 38, 0.67);
+}
+
+.container .header .changeSkins .skinsBtn::before,
+.container .header .changeSkins .skinsBtn::after{
+    content: '';
+    display: block;
+    width: 600px;
+    height: 100%;
+    background: rgba(179, 255, 210, 0.5);
+    opacity: 0.5;
+    position: absolute;
+    left: 55px;
+    top: 0;
+    transform: skew(-15deg);
+    filter: blur(30px);
+    overflow: hidden;
+    transform: translateX(-100px);
+}
+
+.container .header .changeSkins .skinsBtn::after{
+    background: rgba(179, 255, 210, 0.3);
+    left: 60px;
+    width: 40px;
+    filter: blur(5px);
+    opacity: 0;
+}
+
+.container .header .changeSkins .skinsBtn:hover::before{
+    transition: 1s;
+    transform: translateX(320px);
+    opacity: 0.7;
+}
+
+.container .header .changeSkins .skinsBtn:hover::after{
+    transition: 1s;
+    transform: translateX(320px);
+    opacity: 1;
+}
+
+.container .header .changeSkins .skinsBox{
+    width: 180px;
+    height: 135px;
+    position: absolute;
+    top: 32px;
+    right: 5px;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden;
+}
+
+.container .header .changeSkins:hover .skinsBox{
+    display: block;
+}
+
+.container .header .changeSkins .skinsBox button{
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.container .header .changeSkins .skinsBox button:hover{
+    border: 1px solid #999;
+}
+
+/* 更换皮肤模块样式结束 */
+
+/* 自定义部分样式开始 */
+.container .footer #changeBtn,
+.container .footer #changeBtn2{
+    float: left;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 3px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 75px;
+    text-align: center;
+}
+
+.container .footer #changeBtn:hover,
+.container .footer #changeBtn2:hover{
+    color: #a9a9a9;
+    background: #555;
+    font-size: 15px;
+}
+
+.container .footer .controls{
+    font-size: 13px;
+    margin-left: 30px; 
+    color: #ccc;
+    text-align: center;
+}
+
+.container .footer .controls li{
+    float: left;
+    margin-left: 25px;
+    cursor: pointer;
+    width: 60px;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+
+.container .footer .controls li:hover{
+    font-size: 14px;
+    background: #555;
+    color: #a9a9a9;
+}
+
+
+/* 自定义部分样式结束 */

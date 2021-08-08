@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="一个简约的，集豆瓣电影、百度云和迅雷资源搜索功能的影视导航网站。">
+    <meta name="keyword" content="电影导航网站,百度云盘资源，迅雷链接资源,简约网站，电影资源，电影推荐，影片搜索">
+    <title>盘他影视</title>
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!-- 当页面宽度大于700px后，将会导入desktop.css文件，导入一些pc端的独特样式 -->
+    <link rel="stylesheet" media="(min-width:700px)" href="./static/css/desktop.css">
+    <!-- 当页面宽度小于700px后，将会导入mobile.css文件，对一些部分的样式进行重叠 -->
+    <link rel="stylesheet" media="(max-width:700px)" href="./static/css/mobile.css">
+    <link rel="shortcut icon" href="./static/pic/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="backgroundPic" class="container">
+        <!-- 遮罩层区域 -->
+        <div id="mask"></div>
+        <!-- 头部区域开始 -->
+        <div class="header clearfix">
+            <div id="weatherItem" class="weatherItem left disvisible">
+                <iframe scrolling="no" src="https://i.tianqi.com/index.php?c=code&id=8&bgc=%23&bdc=%23&icon=1&num=1&site=15"></iframe>
+            </div>
+            <div id="players" class="players left disvisible">
+                <ul class="clearfix">
+                    <li><i class="iconfont icon-bilibili-fill"></i><a href="https://www.bilibili.com/" target="_blank">bilibili</a></li>
+                    <li><i class="iconfont icon-tengxunshipin"></i><a href="https://v.qq.com/" target="_blank">腾讯视频</a></li>
+                    <li><i class="iconfont icon-changyonglogo32"></i><a href="https://www.iqiyi.com/" target="_blank">爱奇艺</a></li>
+                    <li><img src="./static/pic/dytt.ico"><a href="https://www.dytt8.net/" target="_blank">电影天堂</a></li>
+                    <li><img src="./static/pic/yszx.ico"><a href="https://www.staoq.cn/film/" target="_blank">影视资讯</a></li>
+                </ul>
+            </div>
+            <div id="changeSkins" class="changeSkins disvisible"> 
+                <button class="skinsBtn">切换皮肤</button>
+                <div class="skinsBox clearfix">
+                    <button id="backPic" class="left"></button>
+                    <button id="backPic1" class="left"></button>
+                    <button id="backPic2" class="left"></button>
+                    <button id="backPic3" class="left"></button>
+                    <button id="backPic4" class="left"></button>
+                    <button id="backPic5" class="left"></button>
+                    <button id="backPic6" class="left"></button>
+                    <button id="backPic7" class="left"></button>
+                    <button id="backPic8" class="left"></button>
+                </div>
+            </div>
+        </div>
+        <!-- 头部区域结束 -->
+
+        <!-- 主体部分开始 -->
+        <div class="main">
+            <div class="funcArea clearfix">
+                <!-- logo区域开始 -->
+                <a href="#">
+                    <div class="logo left" title="盘他影视">
+                        <h1>盘他影视</h1>
+                    </div>
+                </a>
+                <!-- logo区域结束 -->
+
+                <!-- form表单区域开始 -->
+                <form id="formItem" action="https://search.douban.com/movie/subject_search" target="_blank" class="formArea left">
+                    <input id="input" name="search_text" class="input" type="text" placeholder="豆瓣搜索" maxlength="30" autocomplete="off">
+                    <ul id="ul"></ul>
+                    <button class="searchButton">
+                        <i class="iconfont icon-iconsmallsearch"></i>
+                    </button>
+                </form>
+                <!-- form表单区域结束 -->
+                  
+                <!-- 资源选择方式设置开始 -->
+                <div class="srcChoose">
+                    <div id="douban"  class="douban left btn selected">豆瓣</div>
+                    <div id="baiduyun" class="baiduyun left btn">百度云</div>
+                    <div id="xunlei" class="xunlei left btn">迅雷</div>
+                    <div id="zimu" class="zimu left btn disappear">字幕</div>
+                </div>
+                 <!-- 资源选择方式设置开始 -->
+
+            </div>
+        </div>
+        <!-- 主体部分结束 -->
+
+        <!-- 尾部部分开始 -->
+        <div class="footer clearfix">
+            <div id="changeBtn">
+                <i class="iconfont icon-qiehuan"></i>
+                自定义
+            </div>
+            <div id="changeBtn2" class="disappear">
+                <i class="iconfont icon-qiehuan"></i>
+                自定义
+            </div>
+
+            <ul id="controls" class="controls left clearfix disappear">
+                <li id="weatherControls">天气控件</li>
+                <li id="onlineWeb">网站控件</li>
+                <li id="skinsButton">皮肤控件</li>  
+                <li id="clearAll">清空控件</li>
+                
+            </ul>
+
+            <ul class="inf clearfix">
+                <li class="tongji">
+                    <a href="https://tongji.baidu.com/">
+                        <i class="iconfont icon-tongji"></i>
+                    </a>
+                </li>
+
+                <li><a href="./contact_us.html" target="_blank">联系我们</a></li>
+                <li class="copy"><a href="">Copyright © 2020 pantays</a></li>
+                <li class="beian"><a href="http://beian.miit.gov.cn/" target="_blank">蜀ICP备 999999号</a></li>
+            </ul>
+        </div>
+        <!-- 尾部部分结束 -->
+    </div>
+    <script src="./static/js/jQuery_min.js"></script>
+    <script src="./static/js/chooseSrc.js"></script> 
+    <script src="./static/js/mask.js"></script>
+    <script src="./static/js/changeBac.js"></script>
+    <script src="./static/js/changeBtn.js"></script>
+    <script src="./static/js/tongji.js"></script>
+</body>
+</html>

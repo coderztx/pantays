@@ -1,0 +1,51 @@
+{
+  "id": "1631247",
+  "name": "pantays",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5643521",
+      "name": "切换",
+      "font_class": "qiehuan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "1631373",
+      "name": "搜索",
+      "font_class": "iconsmallsearch",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "5334197",
+      "name": "统计",
+      "font_class": "tongji",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "1005780",
+      "name": "爱奇艺",
+      "font_class": "changyonglogo32",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "5950874",
+      "name": "腾讯视频",
+      "font_class": "tengxunshipin",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "10918077",
+      "name": "bilibili-fill",
+      "font_class": "bilibili-fill",
+      "unicode": "e75c",
+      "unicode_decimal": 59228
+    }
+  ]
+}
